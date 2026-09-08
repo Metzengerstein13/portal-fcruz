@@ -1,0 +1,6 @@
+{
+  "name": "Portal Ferretería Cruz",
+  "description": "Portal privado corporativo para colaboradores de Ferretería Cruz con autenticación Google, gestión de documentos y fotos, galería de videos de YouTube y directorio de proveedores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

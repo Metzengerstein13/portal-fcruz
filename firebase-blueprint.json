@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "Registered company collaborators and administrators",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string" },
+        "department": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "documents": {
+      "title": "Company Documents and Photos",
+      "description": "Internal documents, price lists, manuals and photo displays",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "fileType": { "type": "string" },
+        "fileUrl": { "type": "string" },
+        "fileSize": { "type": "string" },
+        "description": { "type": "string" },
+        "uploadedBy": { "type": "string" },
+        "uploaderName": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "pinned": { "type": "boolean" }
+      },
+      "required": ["title", "category", "fileType", "uploadedBy"]
+    },
+    "youtube_videos": {
+      "title": "Company YouTube Videos",
+      "description": "Tutorials, product demos and corporate videos",
+      "properties": {
+        "youtubeId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "publishedAt": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "duration": { "type": "string" },
+        "views": { "type": "string" },
+        "addedBy": { "type": "string" }
+      },
+      "required": ["youtubeId", "title"]
+    },
+    "suppliers": {
+      "title": "Suppliers Directory",
+      "description": "Partner brands, links and order contacts",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "logoUrl": { "type": "string" },
+        "website": { "type": "string" },
+        "portalUrl": { "type": "string" },
+        "catalogUrl": { "type": "string" },
+        "contactEmail": { "type": "string" },
+        "contactPhone": { "type": "string" },
+        "description": { "type": "string" },
+        "isFeatured": { "type": "boolean" }
+      },
+      "required": ["name", "category"]
+    },
+    "announcements": {
+      "title": "Internal Portal Announcements",
+      "description": "Internal corporate communications and updates for Ferretería Cruz",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "author": { "type": "string" },
+        "date": { "type": "string" },
+        "type": { "type": "string" },
+        "important": { "type": "boolean" }
+      },
+      "required": ["title", "content", "author"]
+    }
+  }
+}
